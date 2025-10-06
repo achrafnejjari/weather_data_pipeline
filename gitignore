@@ -1,0 +1,31 @@
+# Environnement virtuel
+venv/
+env/
+.venv/
+
+# Caches Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Logs et outputs Spark
+spark-warehouse/
+derby.log
+resultats_weather/
+*.csv
+
+# Fichiers JAR (si téléchargés via --packages, sinon commente cette ligne)
+*.jar
+jars/
+
+# Secrets
+.env
+*.env
+
+# Fichiers temporaires locaux
+.DS_Store
+Thumbs.db
+
+# Éditeurs/IDEs
+.idea/
+.vscode/

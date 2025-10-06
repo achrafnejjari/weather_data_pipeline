@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Pipeline Data Engineering</title>
+</head>
+<body>
+    <h1>Pipeline Météo</h1>
+    <form action="{{ url_for('run_pipeline') }}">
+        <button type="submit">Exécuter le pipeline</button>
+    </form>
+    {% if request.args.get('status') %}
+        <p>{{ request.args.get('status') }}</p>
+    {% endif %}
+</body>
+</html>
