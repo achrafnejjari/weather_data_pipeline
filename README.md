@@ -1,5 +1,3 @@
-# weather_data_pipeline
-
 # 🌤️ Weather Data Pipeline – Kafka + PostgreSQL + Streamlit
 
 ![CI](https://github.com/achrafnejjari/weather-data-pipeline/actions/workflows/ci.yml/badge.svg)
