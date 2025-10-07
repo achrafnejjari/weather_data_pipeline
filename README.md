@@ -10,7 +10,7 @@ Un pipeline de données en temps réel qui collecte les données météorologiqu
 - **Consumer** : Lit les messages Kafka → stocke dans PostgreSQL (une ligne par ville, mise à jour automatique)
 - **Dashboard** : Interface Streamlit avec graphiques interactifs, filtres et export CSV
 - **Monitoring** : pgAdmin intégré pour explorer les données
-- **CI/CD** : Validation automatique via GitHub Actions + images Docker publiées
+- **CI/CD** : Validation automatique via GitHub Actions 
 
 ---
 
