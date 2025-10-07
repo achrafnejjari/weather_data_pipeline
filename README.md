@@ -1,8 +1,5 @@
 # 🌤️ Weather Data Pipeline – Kafka + PostgreSQL + Streamlit
 
-![CI](https://github.com/achrafnejjari/weather-data-pipeline/actions/workflows/ci.yml/badge.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-
 Un pipeline de données en temps réel qui collecte les données météorologiques via l’API OpenWeatherMap, les transmet via **Apache Kafka**, les stocke dans **PostgreSQL**, et les visualise dans un **dashboard interactif Streamlit**.
 
 ---
