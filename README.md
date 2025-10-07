@@ -1,7 +1,31 @@
 # weather_data_pipeline
-# 🌤️ Pipeline Météo Kafka  Pipeline de données en temps réel : 
-- **Producer** : récupère la météo via OpenWeatherMap → envoie à Kafka
-- **Consumer** : lit Kafka → stocke dans PostgreSQL
-- **Dashboard** : Streamlit pour visualiser les données
 
-![CI](https://github.com/achrafnejjari/weather_data_pipeline/actions/workflows/ci.yml/badge.svg)
+# 🌤️ Weather Data Pipeline – Kafka + PostgreSQL + Streamlit
+
+![CI](https://github.com/achrafnejjari/weather-data-pipeline/actions/workflows/ci.yml/badge.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
+Un pipeline de données en temps réel qui collecte les données météorologiques via l’API OpenWeatherMap, les transmet via **Apache Kafka**, les stocke dans **PostgreSQL**, et les visualise dans un **dashboard interactif Streamlit**.
+
+---
+
+## 🚀 Fonctionnalités
+
+- **Producer** : Récupère la météo de 14 villes françaises toutes les 24h via OpenWeatherMap → envoie à Kafka
+- **Consumer** : Lit les messages Kafka → stocke dans PostgreSQL (une ligne par ville, mise à jour automatique)
+- **Dashboard** : Interface Streamlit avec graphiques interactifs, filtres et export CSV
+- **Monitoring** : pgAdmin intégré pour explorer les données
+- **CI/CD** : Validation automatique via GitHub Actions + images Docker publiées
+
+---
+
+## 🏗️ Architecture
+
+```mermaid
+graph LR
+A[OpenWeatherMap API] --> B(Producer)
+B --> C{Apache Kafka}
+C --> D(Consumer)
+D --> E[(PostgreSQL)]
+E --> F[Streamlit Dashboard]
+E --> G[pgAdmin]
